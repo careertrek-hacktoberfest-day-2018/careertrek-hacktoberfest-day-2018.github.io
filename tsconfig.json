@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "jsx": "react",
+    "module": "system",
+    "removeComments": true,
+    "moduleResolution": "node",
+    "lib": [
+      "es2015"
+    ]
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "**/*.spec.ts", ".cache", "public"]
+}

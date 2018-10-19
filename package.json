@@ -1,0 +1,45 @@
+{
+  "name": "careertrek-hacktoberfest-day-2018",
+  "description": "Careertrek Hacktoberfest Day 2018",
+  "version": "1.0.0",
+  "author": "Chinu Cho <chinu.cho@bizreach.co.jp>",
+  "dependencies": {
+    "@types/react-helmet": "^5.0.7",
+    "gatsby": "^2.0.27",
+    "gatsby-plugin-manifest": "^2.0.5",
+    "gatsby-plugin-offline": "^2.0.5",
+    "gatsby-plugin-react-helmet": "^3.0.0",
+    "gatsby-plugin-typescript": "^2.0.0",
+    "gatsby-plugin-typography": "^2.2.0",
+    "react": "^16.5.1",
+    "react-dom": "^16.5.1",
+    "react-helmet": "^5.2.0",
+    "react-typography": "^0.16.13",
+    "typography": "^0.16.17",
+    "typography-theme-github": "^0.15.10"
+  },
+  "keywords": [
+    "gatsby"
+  ],
+  "license": "MIT",
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "serve": "gatsby serve",
+    "format": "prettier --write '**/*.js'",
+    "test": "gauge run src/specs"
+  },
+  "devDependencies": {
+    "prettier": "^1.14.2",
+    "jest": "^23.6.0",
+    "jest-puppeteer": "^3.4.0",
+    "puppeteer": "^1.9.0",
+    "@types/expect-puppeteer": "^3.3.0",
+    "@types/jest-environment-puppeteer": "^2.2.1",
+    "@types/puppeteer": "^1.9.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/careertrek-hacktoberfest-day-2018/careertrek-hacktoberfest-day-2018.github.io"
+  }
+}
