@@ -10,7 +10,7 @@ beforeScenario(async() => {
 afterScenario(async() => await browser.close());
 
 step("Open the home page", async function() {
-	await page.goto('http://localhost:8000/');
+	await page.goto(`http://localhost:${process.env.NODE_ENV === 'dev' ? 8000 : 9000}/`);
 });
 
 step("<location> should show up in the home page", async(location) => {

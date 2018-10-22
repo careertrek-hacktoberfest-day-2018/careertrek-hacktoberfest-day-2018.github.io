@@ -1,12 +1,12 @@
 version: '3.4'
 
 services:
-  web:
+  webdev:
     build:
       context: .
       dockerfile: Dockerfile
     environment:
-      - NODE_ENV=production
+      - NODE_ENV=dev
     command: yarn develop
     ports:
       - 8000:8000

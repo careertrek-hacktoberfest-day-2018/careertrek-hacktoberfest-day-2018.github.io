@@ -27,12 +27,16 @@
     "develop": "gatsby develop",
     "serve": "gatsby serve",
     "format": "prettier --write '**/*.js'",
-    "test": "gauge run src/specs"
+    "test": "gauge run src/specs",
+    "ci:dev": "cross-env NODE_ENV=dev start-server-and-test develop http://localhost:8000 test",
+    "ci:prod": "cross-env NODE_ENV=prod gatsby build && start-server-and-test serve http://localhost:9000 test"
   },
   "devDependencies": {
     "chai": "^4.2.0",
+    "cross-env": "^5.2.0",
     "prettier": "^1.14.2",
-    "puppeteer": "^1.9.0"
+    "puppeteer": "^1.9.0",
+    "start-server-and-test": "^1.7.4"
   },
   "repository": {
     "type": "git",
