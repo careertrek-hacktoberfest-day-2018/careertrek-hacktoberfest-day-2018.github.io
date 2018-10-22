@@ -25,10 +25,11 @@
 - [Gatsby](https://www.gatsbyjs.org/tutorial/)
 - [TypeScript](https://www.typescriptlang.org/docs/home.html)
 - [Yarn](https://yarnpkg.com/en/docs)
-- [Jest](https://jestjs.io/docs/en/getting-started)
 - [Gauge](https://docs.gauge.org/latest/index.html)
 
 ## 🗒 TodoList
 - [ ] Links to BizReach and CareerTrek
-- [ ] Unit test code
+- [ ] Unit test
 - [ ] TypeScript declaration for Typography
+- [ ] ATDD test code TypeScript support
+- [ ] Show Map on the home page
