@@ -11,7 +11,7 @@ afterScenario(async () => await browser.close());
 
 step('Open the home page', async function() {
   await page.goto(
-    `http://localhost:${process.env.NODE_ENV === 'prod' ? 9000 : 8000}/`,
+    `http://localhost:${process.env.NODE_ENV === 'production' ? 9000 : 8000}/`,
   );
 });
 

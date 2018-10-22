@@ -6,7 +6,7 @@ services:
       context: .
       dockerfile: Dockerfile
     environment:
-      - NODE_ENV=dev
+      - NODE_ENV=development
     command: yarn develop
     ports:
       - 8000:8000
