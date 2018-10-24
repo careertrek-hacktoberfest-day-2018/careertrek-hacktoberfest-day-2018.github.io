@@ -35,7 +35,5 @@ jobs:
         
       # run tests!
       - run: yarn ci:dev
-
-  deploy:
-    steps:
+      # deploy
       - run: yarn deploy
