@@ -48,5 +48,7 @@
 ## 🗒 TodoList
 - [ ] Links to BizReach and CareerTrek
 - [ ] Show Map on the home page
+- [ ] Add encourage button
+- [ ] Rearrange code related to deployment
 - [ ] Unit test
 - [ ] TypeScript declaration for Typography
