@@ -31,8 +31,8 @@
     "format": "prettier --write 'src/*.js'",
     "test:dev": "cross-env NODE_ENV=development cucumber-js ./specs/*.feature --require-module ts-node/register --require './specs/*.ts'",
     "test:prod": "cross-env NODE_ENV=production cucumber-js ./specs/*.feature --require-module ts-node/register --require './specs/*.ts'",
-    "ci:dev": "cross-env NODE_ENV=development start-server-and-test develop http://0.0.0.0:8000 test",
-    "ci:prod": "cross-env NODE_ENV=production gatsby build && start-server-and-test serve http://localhost:9000 test",
+    "ci:dev": "cross-env NODE_ENV=development start-server-and-test develop http://0.0.0.0:8000 test:dev",
+    "ci:prod": "cross-env NODE_ENV=production gatsby build && start-server-and-test serve http://localhost:9000 test:prod",
     "deploy": "gatsby build && gh-pages -d public -b gh-pages"
   },
   "devDependencies": {
