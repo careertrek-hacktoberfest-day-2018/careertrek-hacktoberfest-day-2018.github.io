@@ -2,7 +2,7 @@
   "compilerOptions": {
     "target": "es5",
     "jsx": "react",
-    "module": "system",
+    "module": "commonjs",
     "removeComments": true,
     "moduleResolution": "node",
     "lib": [

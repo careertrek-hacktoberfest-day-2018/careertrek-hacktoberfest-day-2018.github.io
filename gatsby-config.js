@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: 'Gatsby Default Starter',
+    title: 'Careertrek Hacktoberfest Day 2018',
   },
   plugins: [
     'gatsby-plugin-typescript',

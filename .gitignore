@@ -4,9 +4,12 @@ node_modules
 yarn-error.log
 .vscode
 <<<<<<< HEAD
+<<<<<<< HEAD
 logs
 =======
 .gauge
+=======
+>>>>>>> 60e9d61... replace gauge with puppeteer
 logs
 reports
 >>>>>>> 73a0b74... add basic gauge support

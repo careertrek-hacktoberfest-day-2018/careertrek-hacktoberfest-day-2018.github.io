@@ -13,7 +13,7 @@
 
     ```sh
     docker build -t careertrekhacktober:latest docker/
-    docker run --rm -it -p 8000:8000 -p 9000:9000 -p 44647:44647 -p 43696:43696 -v $(pwd):/webapp careertrekhacktober develop
+    docker run --rm -it -p 8000:8000 -p 9000:9000 -v $(pwd):/webapp careertrekhacktober develop
     ```
 
 ### Without Docker
@@ -44,7 +44,6 @@
 
 ## 🗒 TodoList
 - [ ] Links to BizReach and CareerTrek
+- [ ] Show Map on the home page
 - [ ] Unit test
 - [ ] TypeScript declaration for Typography
-- [ ] ATDD test code TypeScript support
-- [ ] Show Map on the home page
