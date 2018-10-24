@@ -38,7 +38,8 @@ jobs:
       # deploy!!
       - deploy:
           command: |
-            apk add openssh
-            git config --global user.name $GH_NAME
-            git config --global user.email $GH_EMAIL
-            yes | yarn deploy
+            if [ $CIRCLE_BRANCH == 'develop' ]; then
+              yarn build
+              chmod +x .circleci/setup-github.sh
+              .circleci/setup-github.sh
+            fi
