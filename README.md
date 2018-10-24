@@ -1,6 +1,8 @@
 ## 🚀 Quick start
 0.  **Opt-in [Hacktoberfest 2018](https://hacktoberfest.digitalocean.com)**
+
    ![hacktoberfest](https://hacktoberfest.digitalocean.com/assets/logo-hacktoberfest-658b5aa2bd34e782d29c40bf6afbdff00f20fe1328efa6da17743878ba8db66f.png)
+
 
 ### With Docker (Suggestion)
 1. **Install Docker**
@@ -37,10 +39,11 @@
     ```
 
 ## 📚 References
+- [Docker](https://docs.docker.com/)
 - [Gatsby](https://www.gatsbyjs.org/tutorial/)
 - [TypeScript](https://www.typescriptlang.org/docs/home.html)
 - [Yarn](https://yarnpkg.com/en/docs)
-- [Gauge](https://docs.gauge.org/latest/index.html)
+- [Cucumber](https://docs.cucumber.io/)
 
 ## 🗒 TodoList
 - [ ] Links to BizReach and CareerTrek
