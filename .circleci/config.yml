@@ -3,7 +3,7 @@ jobs:
   build:
     branches:
       ignore:
-        - gh-pages
+        - master
 
     docker:
       # specify the version you desire here
@@ -36,5 +36,8 @@ jobs:
       # run tests!
       - run: yarn ci:prod
       # deploy!!
-      - run: yarn add -D gh-pages
-      - run: gatsby build && gh-pages -d public -b gh-pages
+      - deploy:
+        command: |
+          git config --global user.name $GH_NAME
+          git config --global user.email $GH_EMAIL
+          yarn deploy

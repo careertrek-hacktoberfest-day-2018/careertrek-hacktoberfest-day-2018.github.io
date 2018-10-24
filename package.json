@@ -34,7 +34,8 @@
     "test:prod": "cross-env NODE_ENV=production cucumber-js ./specs/*.feature --require-module ts-node/register --require './specs/*.ts'",
     "ci:dev": "cross-env NODE_ENV=development start-server-and-test develop http://0.0.0.0:8000 test:dev",
     "ci:prod": "cross-env NODE_ENV=production gatsby build && start-server-and-test serve http://localhost:9000 test:prod",
-    "deploy": "echo \"Please do not deploy from local environment.\" && exit 1"
+    "deploy": "gatsby build && gh-pages -d public -b master",
+    "pages": "gh-pages --help"
   },
   "devDependencies": {
     "@types/chai": "^4.1.6",
@@ -45,6 +46,7 @@
     "cross-env": "^5.2.0",
     "cucumber": "^5.0.2",
     "cucumber-html-reporter": "^4.0.4",
+    "gh-pages": "^2.0.1",
     "prettier": "^1.14.2",
     "puppeteer": "^1.9.0",
     "start-server-and-test": "^1.7.4",
