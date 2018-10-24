@@ -20,7 +20,6 @@ fi
 
 if  [ "$1" == "develop" ]
 then
-  rm -rf $WEBAPP_DIR/public
   yarn develop
 
 elif  [ "$1" == "build" ]
@@ -33,6 +32,10 @@ then
   rm -rf $WEBAPP_DIR/public
   yarn build
   yarn serve
+
+elif  [ "$1" == "ci" ]
+then
+  yarn ci:dev
 
 else
   exec $@
