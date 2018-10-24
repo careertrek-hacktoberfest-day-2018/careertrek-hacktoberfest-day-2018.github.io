@@ -1,6 +1,6 @@
 #!/bin/sh
 # https://jtway.co/deploying-jekyll-to-github-pages-with-circleci-2-0-3eb69324bc6e
-ssh -o "StrictHostKeyChecking=no"
+echo -e "Host github.com\n\tStrictHostKeyChecking no\n" >> ~/.ssh/config
 
 git config user.name "$GH_NAME"
 git config user.email "$GH_EMAIL"
