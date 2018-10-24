@@ -29,11 +29,12 @@
     "develop": "gatsby develop --host 0.0.0.0",
     "serve": "NODE_ENV=production gatsby serve",
     "format": "prettier --write 'src/*.js'",
+    "test": "yarn test:dev",
     "test:dev": "cross-env NODE_ENV=development cucumber-js ./specs/*.feature --require-module ts-node/register --require './specs/*.ts'",
     "test:prod": "cross-env NODE_ENV=production cucumber-js ./specs/*.feature --require-module ts-node/register --require './specs/*.ts'",
     "ci:dev": "cross-env NODE_ENV=development start-server-and-test develop http://0.0.0.0:8000 test:dev",
     "ci:prod": "cross-env NODE_ENV=production gatsby build && start-server-and-test serve http://localhost:9000 test:prod",
-    "deploy": "gatsby build && gh-pages -d public -b gh-pages"
+    "deploy": "echo \"Please do not deploy from local environment.\" && exit 1"
   },
   "devDependencies": {
     "@types/chai": "^4.1.6",

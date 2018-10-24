@@ -35,5 +35,6 @@ jobs:
         
       # run tests!
       - run: yarn ci:prod
-      # deploy
-      - run: yarn deploy
+      # deploy!!
+      - run: yarn add -D gh-pages
+      - run: gatsby build && gh-pages -d public -b gh-pages
