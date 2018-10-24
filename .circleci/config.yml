@@ -39,5 +39,6 @@ jobs:
       - deploy:
           command: |
             if [ $CIRCLE_BRANCH == 'develop' ]; then
-              bash .circleci/setup-github.sh
+              chmod +x .circleci/setup-github.sh
+              .circleci/setup-github.sh
             fi

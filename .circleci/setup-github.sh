@@ -1,3 +1,4 @@
+#!/bin/sh
 # https://jtway.co/deploying-jekyll-to-github-pages-with-circleci-2-0-3eb69324bc6e
 
 git config user.name "$GH_NAME"
