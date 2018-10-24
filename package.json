@@ -27,9 +27,10 @@
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop --host 0.0.0.0",
-    "serve": "gatsby serve",
+    "serve": "NODE_ENV=production gatsby serve",
     "format": "prettier --write 'src/*.js'",
-    "test": "cucumber-js ./specs/*.feature --require-module ts-node/register --require './specs/*.ts'",
+    "test:dev": "cross-env NODE_ENV=development cucumber-js ./specs/*.feature --require-module ts-node/register --require './specs/*.ts'",
+    "test:prod": "cross-env NODE_ENV=production cucumber-js ./specs/*.feature --require-module ts-node/register --require './specs/*.ts'",
     "ci:dev": "cross-env NODE_ENV=development start-server-and-test develop http://0.0.0.0:8000 test",
     "ci:prod": "cross-env NODE_ENV=production gatsby build && start-server-and-test serve http://localhost:9000 test",
     "deploy": "gatsby build && gh-pages -d public -b gh-pages"

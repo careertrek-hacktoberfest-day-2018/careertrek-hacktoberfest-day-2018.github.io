@@ -21,8 +21,9 @@ BeforeAll({ timeout: 100 * 1000 }, async () => {
 AfterAll({ timeout: 100 * 1000 }, async () => await browser.close());
 
 Given(/^I am on the homepage$/, async function() {
+  console.log('NODE_ENV: ' + process.env.NODE_ENV);
   await page.goto(
-    process.env.NODE_ENV === 'production' ? 'http://localhost:9000' : 'http://0.0.0.0:8000',
+    process.env.NODE_ENV === 'production' ? 'http://localhost:9000' : 'http://0.0.0.0:8000'
   );
 });
 
