@@ -39,6 +39,7 @@ jobs:
       - deploy:
           command: |
             if [ $CIRCLE_BRANCH == 'develop' ]; then
+              apk add openssh
               yarn build
               chmod +x .circleci/setup-github.sh
               .circleci/setup-github.sh
