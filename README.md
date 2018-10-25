@@ -38,6 +38,16 @@
     yarn develop
     ```
 
+4.  **Check-in your work.**
+
+    ```sh
+    git commit -am "My Awersome Commit"
+    ```
+
+5.  **Enjoy your work.**
+
+    [>>Click Me<<](https://careertrek-hacktoberfest-day-2018.github.io/)
+
 ## 📚 References
 - [Docker](https://docs.docker.com/)
 - [Gatsby](https://www.gatsbyjs.org/tutorial/)
