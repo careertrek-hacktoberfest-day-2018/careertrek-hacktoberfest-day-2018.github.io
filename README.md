@@ -1,3 +1,5 @@
+[![CircleCI](https://circleci.com/gh/careertrek-hacktoberfest-day-2018/careertrek-hacktoberfest-day-2018.github.io/tree/develop.svg?style=shield)](https://circleci.com/gh/careertrek-hacktoberfest-day-2018/careertrek-hacktoberfest-day-2018.github.io/tree/develop)[![dependencies](https://img.shields.io/david/careertrek-hacktoberfest-day-2018/careertrek-hacktoberfest-day-2018.github.io.svg)](https://david-dm.org/careertrek-hacktoberfest-day-2018/careertrek-hacktoberfest-day-2018.github.io/)  
+
 ## 🚀 Quick start
 0.  **Opt-in [Hacktoberfest 2018](https://hacktoberfest.digitalocean.com)**
 
