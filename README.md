@@ -46,6 +46,7 @@
 - [Cucumber](https://docs.cucumber.io/)
 
 ## 🗒 TodoList
+- [ ] Change favicon to CareerTrek's 
 - [ ] Links to BizReach and CareerTrek
 - [ ] Show Map on the home page
 - [ ] Add encourage button

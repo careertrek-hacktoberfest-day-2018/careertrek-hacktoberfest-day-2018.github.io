@@ -1,5 +1,5 @@
 import * as React from 'react';
-import headerBanner from '../images/Hacktoberfest_2018_banner1_1293x157.png';
+import headerBanner from '../images/Hacktoberfest_2018_banner2_2482x304.png';
 
 interface HeaderProps {
   siteTitle: string;
@@ -11,6 +11,7 @@ const Header = ({ siteTitle }: HeaderProps) => (
       background: `url(${headerBanner})`,
       marginBottom: '1.45rem',
       minHeight: '157px',
+      backgroundSize: 'auto 157px',
     }}
     title={siteTitle}
   >
