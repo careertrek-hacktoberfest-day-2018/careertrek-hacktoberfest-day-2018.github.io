@@ -3,54 +3,57 @@
 
    ![hacktoberfest](https://hacktoberfest.digitalocean.com/assets/logo-hacktoberfest-658b5aa2bd34e782d29c40bf6afbdff00f20fe1328efa6da17743878ba8db66f.png)
 
+1.  **Fork project on GitHub**
+
+2.  **Clone project**
 
 ### With Docker (Suggestion)
-1. **Install Docker**
+3.  **Install Docker**
 
     ```sh
     brew cask install docker
     ```
 
-2. **Build Docker image**
+3.  **Build Docker image**
 
     ```sh
     docker build -t careertrekhacktober:latest docker/
     docker run --rm -it -p 8000:8000 -p 9000:9000 -v $(pwd):/webapp careertrekhacktober develop
     ```
 
+4.  **Check-in your work.**
+
+    ```sh
+    # Example 
+    git commit -am "My Awesome Commit"
+    git push
+    ```
+
+5.  **Open Pull Request to original repository's develop branch**
+
+6.  **Enjoy your work.**
+
+    [>>Click Me<<](https://careertrek-hacktoberfest-day-2018.github.io/)
+
 ### Without Docker
-1.  **Install the Gatsby CLI.**
+####  **Install the Gatsby CLI.**
 
     ```sh
     # install the Gatsby CLI globally
     npm install -g gatsby-cli
     ```
 
-2. **Install dependencies.**
+#### **Install dependencies.**
 
     ```sh
     yarn install
     ```
 
-3.  **Start developing.**
+####  **Start developing.**
 
     ```sh
     yarn develop
     ```
-
-4.  **Check-in your work.**
-
-    ```sh
-    # Example 
-    # (Open Pull Request to develop branch, don't directly push to develop)
-    git checkout -b my-awesome-branch
-    git commit -am "My Awesome Commit"
-    git push set-upstream origin my-awesome-branch
-    ```
-
-5.  **Enjoy your work.**
-
-    [>>Click Me<<](https://careertrek-hacktoberfest-day-2018.github.io/)
 
 ## 📚 References
 - [Docker](https://docs.docker.com/)
