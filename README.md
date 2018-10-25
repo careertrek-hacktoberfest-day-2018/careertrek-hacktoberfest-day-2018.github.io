@@ -41,7 +41,11 @@
 4.  **Check-in your work.**
 
     ```sh
-    git commit -am "My Awersome Commit"
+    # Example 
+    # (Open Pull Request to develop branch, don't directly push to develop)
+    git checkout -b my-awesome-branch
+    git commit -am "My Awesome Commit"
+    git push set-upstream origin my-awesome-branch
     ```
 
 5.  **Enjoy your work.**
@@ -61,6 +65,7 @@
 - [ ] Show Map on the home page
 - [ ] Multi-languages support
 - [ ] Add encourage button
+- [ ] Add photo showcase
 - [ ] Rearrange code related to deployment
 - [ ] Unit test
 - [ ] TypeScript declaration for Typography
