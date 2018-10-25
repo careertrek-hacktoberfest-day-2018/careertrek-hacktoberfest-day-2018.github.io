@@ -7,7 +7,7 @@ jobs:
 
     docker:
       # specify the version you desire here
-      - image: chinucho/careertrek-hacktoberfest-day-2018.github.io:latest
+      - image: chinucho/careertrek-hacktoberfest-day-2018.github.io
       
       # Specify service dependencies here if necessary
       # CircleCI maintains a library of pre-built images
