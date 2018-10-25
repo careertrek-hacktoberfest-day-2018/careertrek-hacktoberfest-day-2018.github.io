@@ -49,6 +49,7 @@
 - [ ] Change favicon to CareerTrek's 
 - [ ] Links to BizReach and CareerTrek
 - [ ] Show Map on the home page
+- [ ] Multi-languages support
 - [ ] Add encourage button
 - [ ] Rearrange code related to deployment
 - [ ] Unit test
