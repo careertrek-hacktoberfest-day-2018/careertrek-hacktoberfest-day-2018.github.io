@@ -72,4 +72,4 @@
 - [ ] Rearrange code related to deployment
 - [ ] Improve Cucumber code coverage
 - [ ] Unit test
-- [ ] TypeScript declaration for Typography
+- [x] TypeScript declaration for Typography
