@@ -1,5 +1,5 @@
-import { Browser, launch, Page, ElementHandle } from 'puppeteer';
-import { BeforeAll, AfterAll, Given, Then } from 'cucumber';
+import {Browser, launch, Page, ElementHandle, WrapElementHandle} from 'puppeteer';
+import {BeforeAll, AfterAll, Given, Then, When} from 'cucumber';
 import { expect } from 'chai';
 
 let browser: Browser = null;
@@ -16,7 +16,7 @@ BeforeAll({ timeout: 100 * 1000 }, async () => {
     ],
   });
   page = await browser.newPage();
-  page.waitFor(2000);
+  await page.waitFor(2000);
 });
 
 AfterAll({ timeout: 100 * 1000 }, async () => await browser.close());
@@ -26,6 +26,11 @@ Given(/^I am on the homepage$/, async function() {
   await page.goto(
     process.env.NODE_ENV === 'production' ? 'http://localhost:9000' : 'http://0.0.0.0:8000'
   );
+  await page.waitForSelector('body');
+});
+
+When(/^I clicked "(.*?)"$/, async word => {
+    await page.$eval('a[href*="digitalocean"]', (el: WrapElementHandle<any>) => el.click());
 });
 
 Then(/^I can see "(.*?)"$/, async location => {
@@ -44,4 +49,13 @@ Then(/^I cannot see "(.*?)"$/, async (word) => {
   )).jsonValue();
 
   expect(bodyText).to.not.have.string(word);
+});
+
+Then(/^I can access "(.*?)"$/, async (word) => {
+    const body: ElementHandle<Element> = await page.waitForSelector('body');
+    const bodyText: String = await (await body.getProperty(
+        'innerText',
+    )).jsonValue();
+
+    expect(bodyText).to.not.have.string(word);
 });
