@@ -63,7 +63,7 @@
 
 ## 🗒 TodoList
 - [x] Change favicon to CareerTrek's
-- [x] Change fonts to Hacktoberfest's 
+- [x] Change fonts to Hacktoberfest's
 - [x] Links to BizReach and CareerTrek
 - [x] Show Map on the home page
 - [ ] Multi-languages support
