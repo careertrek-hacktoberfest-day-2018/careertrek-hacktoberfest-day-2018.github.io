@@ -16,7 +16,7 @@ const IndexPage = () => (
     </p>
     <p>Let us start hacking!</p>
     <a href="https://hacktoberfest.digitalocean.com/">Hacktoberfest</a>
-    {<EncourageButton></EncourageButton> }
+    <EncourageButton />
   </Layout>
 );
 
