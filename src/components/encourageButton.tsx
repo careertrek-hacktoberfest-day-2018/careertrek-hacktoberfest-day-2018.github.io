@@ -29,17 +29,17 @@ export default class EncourageButton extends React.Component<{}, IState> {
 
   render() {
     return (
-      <div style={buttonStyle} onClick={this.handleEncourage}>
+      <button style={buttonStyle} onClick={this.handleEncourage}>
         <img src={EncourageIcon} style={iconStyle} />
-        いいね！: {this.state.count}
-      </div>
+        Nice! {this.state.count}
+      </button>
     );
   }
 }
 
 const buttonStyle = {
   width: '170px',
-  lineHeight: '32px',
+  lineHeight: '36px',
   borderRadius: '4px',
   border: 'none',
   padding: '0 16px',
@@ -50,7 +50,7 @@ const buttonStyle = {
 
 const iconStyle = {
   display: 'inline-block',
-  width: '24px',
-  height: '24px',
+  width: '30px',
+  height: '32px',
   margin: '0 2px',
 };

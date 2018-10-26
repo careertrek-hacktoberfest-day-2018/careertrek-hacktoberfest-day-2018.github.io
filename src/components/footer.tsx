@@ -3,6 +3,7 @@ import * as React from 'react';
 import bizreachIcon from '../images/bizreach-icon.png';
 import careerTrekIcon from '../images/careertrek-icon.png';
 import stanbyIcon from '../images/stanby-icon.png';
+import HacktoberFestIcon from '../images/Hacktoberfest_2018_banner3_522x522.png';
 
 const Footer = () => (
   <footer
@@ -20,7 +21,17 @@ const Footer = () => (
           '"Sailec-Bold", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", "Helvetica", "Arial", sans-serif',
       }}
     >
-      <h2 style={{ fontWeight: 200 }}>Our Company Product</h2>
+      <h2 style={{ fontWeight: 200 }}>Special Links</h2>
+      <div style={LinkWrapperStyle}>
+        <img src={HacktoberFestIcon} style={iconStyle} />
+        <a
+          href="https://hacktoberfest.digitalocean.com/"
+          target="_blank"
+          style={linkStyle}
+        >
+          Hacktoberfest
+        </a>
+      </div>
       <div style={LinkWrapperStyle}>
         <img src={bizreachIcon} style={iconStyle} />
         <a href="https://www.bizreach.jp/" target="_blank" style={linkStyle}>
@@ -36,7 +47,7 @@ const Footer = () => (
       <div style={LinkWrapperStyle}>
         <img src={stanbyIcon} style={iconStyle} />
         <a href="https://jp.stanby.com/" target="_blank" style={linkStyle}>
-            Stanby
+          Stanby
         </a>
       </div>
     </div>
