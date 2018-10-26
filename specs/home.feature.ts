@@ -9,13 +9,14 @@ BeforeAll({ timeout: 100 * 1000 }, async () => {
   browser = await launch({
     executablePath: process.env.CHROME_BIN || null,
     args: [
-      '--no-sandbox',
-      '--disable-setuid-sandbox',
-      '--headless',
-      '--disable-gpu',
+        '--no-sandbox',
+        '--disable-setuid-sandbox',
+        '--headless',
+        '--disable-gpu',
     ],
   });
   page = await browser.newPage();
+  page.waitFor(2000);
 });
 
 AfterAll({ timeout: 100 * 1000 }, async () => await browser.close());
