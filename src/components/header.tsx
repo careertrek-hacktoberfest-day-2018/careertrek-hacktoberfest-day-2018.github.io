@@ -8,11 +8,12 @@ interface HeaderProps {
 const Header = ({ siteTitle }: HeaderProps) => (
   <header
     style={{
-      background: `url(${headerBanner})`,
+      background: `url(${headerBanner}) center center / cover no-repeat`,
+      width: '100%',
+      height: '0',
+      paddingTop: 'calc(304 / 2482 * 100%)',
       marginBottom: '1.45rem',
-      minHeight: '157px',
-      backgroundSize: 'auto 157px',
-    }}
+      }}
     title={siteTitle}
   />
 );
