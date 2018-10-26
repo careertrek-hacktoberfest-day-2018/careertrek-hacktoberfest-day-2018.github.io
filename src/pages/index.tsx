@@ -1,6 +1,8 @@
 import * as React from 'react';
 import showcaseImage1 from '../images/5.jpg';
 import showcaseImage2 from '../images/6.jpg';
+import cyanImg from "../images/cyan.jpg";
+import goeImg from "../images/goemon.jpg";
 
 import Layout from '../components/layout';
 import EncourageButton from '../components/encourageButton';
@@ -56,7 +58,16 @@ const IndexPage = () => (
         Hacktoberfest
       </a>
     </div>
-    {/* <EncouragedButton></EncouragedButton> */}
+    <h3>Today's Awesome Contributor!!</h3>
+      <table>
+          <th>cyanたろう</th>
+          <th>五右衛門さん</th>
+          <tr>
+              <td><a href="https://github.com/chinu-cho" target="_blank">@cho.chinu</a><img src={cyanImg} /></td>
+              <td><a href="https://github.com/hirogoe" target="_blank">@takakura</a><img src={goeImg} /></td>
+          </tr>
+      </table>
+      {<EncourageButton/> }
   </Layout>
 );
 
