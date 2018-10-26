@@ -1,7 +1,6 @@
 import * as React from 'react';
 
 import Layout from '../components/layout';
-import EncouragedButton from '../components/encourageButton';
 
 const IndexPage = () => (
   <Layout>
