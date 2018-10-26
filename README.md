@@ -68,8 +68,8 @@
 - [x] Show Map on the home page
 - [ ] Multi-languages support
 - [ ] Add encourage button
-- [ ] Add photo showcase
+- [x] Add photo showcase
 - [ ] Rearrange code related to deployment
 - [ ] Improve Cucumber code coverage
 - [ ] Unit test
-- [ ] TypeScript declaration for Typography
+- [x] TypeScript declaration for Typography
