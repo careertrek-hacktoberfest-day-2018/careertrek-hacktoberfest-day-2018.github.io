@@ -45,7 +45,7 @@ const Layout = ({ children }: LayoutProps) => (
             maxWidth: 960,
             padding: '0px 1.0875rem 1.45rem',
             paddingTop: 0,
-            fontFamily: 'YuGothic',
+            fontFamily: '"Sailec-Bold", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", "Helvetica", "Arial", sans-serif',
           }}
         >
           {children}
