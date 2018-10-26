@@ -13,7 +13,7 @@ const Header = ({ siteTitle }: HeaderProps) => (
       height: '0',
       paddingTop: 'calc(304 / 2482 * 100%)',
       marginBottom: '1.45rem',
-      }}
+    }}
     title={siteTitle}
   />
 );
