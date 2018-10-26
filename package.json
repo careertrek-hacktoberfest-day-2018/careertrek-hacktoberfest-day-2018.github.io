@@ -35,7 +35,8 @@
     "ci:dev": "cross-env NODE_ENV=development start-server-and-test develop http://0.0.0.0:8000 test:dev",
     "ci:prod": "cross-env NODE_ENV=production gatsby build && start-server-and-test serve http://localhost:9000 test:prod",
     "deploy": "gatsby build && gh-pages -d public -b master",
-    "pages": "gh-pages --help"
+    "pages": "gh-pages --help",
+    "lint": "tslint -c tslint.json 'src/**/*.{ts,tsx}'"
   },
   "devDependencies": {
     "@types/chai": "^4.1.6",
@@ -52,7 +53,10 @@
     "prettier": "^1.14.2",
     "puppeteer": "^1.9.0",
     "start-server-and-test": "^1.7.4",
-    "ts-node": "^7.0.1"
+    "ts-node": "^7.0.1",
+    "tslint": "^5.11.0",
+    "tslint-config-prettier": "^1.15.0",
+    "tslint-react": "^3.6.0"
   },
   "repository": {
     "type": "git",
@@ -64,9 +68,9 @@
     }
   },
   "lint-staged": {
-    "*.{ts,tsx,js,json,css,md}": [
-      "prettier --write",
-      "git add"
+    "*.{ts,tsx}": [
+      "tslint",
+      "prettier --write"
     ]
   }
 }
