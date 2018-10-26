@@ -14,8 +14,7 @@ const Header = ({ siteTitle }: HeaderProps) => (
       backgroundSize: 'auto 157px',
     }}
     title={siteTitle}
-  >
-  </header>
+  />
 );
 
 export default Header;
