@@ -1,0 +1,24 @@
+{
+  "extends": ["tslint:latest", "tslint-react", "tslint-config-prettier"],
+  "linterOptions": {
+    "exclude": ["**/__fixtures__/**", "**/__tests__/**"]
+  },
+  "rules": {
+    "jsx-wrap-multiline": false,
+    "ordered-imports": false,
+    "no-any": false,
+    "no-empty": false,
+    "no-submodule-imports": false,
+    "no-namespace": false,
+    "no-implicit-dependencies": false,
+    "no-trailing-whitespace": true,
+    "object-literal-sort-keys": false,
+    "jsx-boolean-value": false,
+    "jsx-no-lambda": false,
+    "member-access": false,
+    "member-ordering": false,
+    "interface-name": false,
+    "triple-equals": [true, "allow-null-check"],
+    "max-classes-per-file": false
+  }
+}
