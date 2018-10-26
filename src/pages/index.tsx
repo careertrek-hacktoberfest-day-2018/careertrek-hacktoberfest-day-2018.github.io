@@ -1,6 +1,7 @@
 import * as React from 'react';
 
 import Layout from '../components/layout';
+import EncourageButton from "../components/encourageButton";
 
 const IndexPage = () => (
   <Layout>
@@ -15,7 +16,7 @@ const IndexPage = () => (
     </p>
     <p>Let us start hacking!</p>
     <a href="https://hacktoberfest.digitalocean.com/">Hacktoberfest</a>
-    {/* <EncouragedButton></EncouragedButton> */}
+    {<EncourageButton></EncourageButton> }
   </Layout>
 );
 
