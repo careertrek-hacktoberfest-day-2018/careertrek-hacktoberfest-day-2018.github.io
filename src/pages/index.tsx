@@ -1,22 +1,22 @@
 import * as React from 'react';
 import showcaseImage1 from '../images/5.jpg';
 import showcaseImage2 from '../images/6.jpg';
-import cyanImg from "../images/cyan.jpg";
-import goeImg from "../images/goemon.jpg";
+import cyanImg from '../images/cyan.jpg';
+import goeImg from '../images/goemon.jpg';
 
 import Layout from '../components/layout';
 import EncourageButton from '../components/encourageButton';
-import HacktoberFestIcon from '../images/Hacktoberfest_2018_banner3_522x522.png'
+import HacktoberFestIcon from '../images/Hacktoberfest_2018_banner3_522x522.png';
 
 const listStyle = {
   display: 'inline-block',
-  margin: '1rem'
+  margin: '1rem',
 };
 
 const imgStyle = {
   width: '300px',
   height: 'auto',
-  objectFit: 'contain'
+  objectFit: 'contain',
 };
 
 const IndexPage = () => (
@@ -24,14 +24,16 @@ const IndexPage = () => (
     <h1>CareerTrek Hacktoberfest Day 2018</h1>
     <section>
       <h2>happy hacking day!</h2>
-      <ul style={{
-        listStyleType: 'none',
-      }}>
+      <ul
+        style={{
+          listStyleType: 'none',
+        }}
+      >
         <li style={listStyle}>
-          <img style={imgStyle} src={showcaseImage1} alt=""/>
+          <img style={imgStyle} src={showcaseImage1} alt="" />
         </li>
         <li style={listStyle}>
-          <img style={imgStyle} src={showcaseImage2} alt=""/>
+          <img style={imgStyle} src={showcaseImage2} alt="" />
         </li>
       </ul>
     </section>
@@ -54,20 +56,34 @@ const IndexPage = () => (
     <h2>Let us start hacking!</h2>
     <div style={LinkWrapperStyle}>
       <img src={HacktoberFestIcon} style={iconStyle} />
-      <a href="https://hacktoberfest.digitalocean.com/" target="_blank" style={linkStyle}>
+      <a
+        href="https://hacktoberfest.digitalocean.com/"
+        target="_blank"
+        style={linkStyle}
+      >
         Hacktoberfest
       </a>
     </div>
     <h3>Today's Awesome Contributor!!</h3>
-      <table>
-          <th>cyanたろう</th>
-          <th>五右衛門さん</th>
-          <tr>
-              <td><a href="https://github.com/chinu-cho" target="_blank">@cho.chinu</a><img src={cyanImg} /></td>
-              <td><a href="https://github.com/hirogoe" target="_blank">@takakura</a><img src={goeImg} /></td>
-          </tr>
-      </table>
-      <EncourageButton />
+    <table>
+      <th>cyanたろう</th>
+      <th>五右衛門さん</th>
+      <tr>
+        <td>
+          <a href="https://github.com/chinu-cho" target="_blank">
+            @cho.chinu
+          </a>
+          <img src={cyanImg} />
+        </td>
+        <td>
+          <a href="https://github.com/hirogoe" target="_blank">
+            @takakura
+          </a>
+          <img src={goeImg} />
+        </td>
+      </tr>
+    </table>
+    <EncourageButton />
   </Layout>
 );
 
