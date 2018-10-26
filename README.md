@@ -35,7 +35,7 @@
 
 6.  **Enjoy your work.**
 
-    [>>Click Me<<](https://careertrek-hacktoberfest-day-2018.github.io/)
+    [>>>>>>>>>Click Me<<<<<<<<<<](https://careertrek-hacktoberfest-day-2018.github.io/)
 
 ### Without Docker
 ####  **Install the Gatsby CLI.**
