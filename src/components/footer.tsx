@@ -60,6 +60,7 @@ const iconStyle = {
 
 const linkStyle = {
   color: '#888',
+  textDecoration: 'none',
 };
 
 export default Footer;
