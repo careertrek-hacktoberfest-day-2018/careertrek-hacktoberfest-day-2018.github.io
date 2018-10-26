@@ -6,6 +6,7 @@ import EncourageButton from '../components/encourageButton';
 const IndexPage = () => (
   <Layout>
     <h1>CareerTrek Hacktoberfest Day 2018</h1>
+    <h3>Address</h3>
     <address>
       1-20-8, Fujigaoka, Aoba-ku, Yokohama-shi, Kanagawa-ken 227-0043, Japan
     </address>
@@ -16,11 +17,12 @@ const IndexPage = () => (
       frameBorder="0"
       allowFullScreen
     />
+    <h3>Time Schedule</h3>
     <p>
       <time dateTime="2018-10-26T10:00+9:00">10:00</time>~
       <time dateTime="2018-10-26T10:00+18:00">18:00</time>
     </p>
-    <p>Let us start hacking!</p>
+    <h2>Let us start hacking!</h2>
     <a href="https://hacktoberfest.digitalocean.com/">Hacktoberfest</a>
     {/* <EncouragedButton></EncouragedButton> */}
   </Layout>
