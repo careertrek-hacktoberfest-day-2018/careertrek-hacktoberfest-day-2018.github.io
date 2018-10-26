@@ -20,7 +20,8 @@ const IndexPage = () => (
     <p>Let us start hacking!</p>
     <a href="https://hacktoberfest.digitalocean.com/">Hacktoberfest</a>
     <h2>Our Company Product</h2>
-    <a href="https://www.bizreach.jp/">BizReach</a><br>
+    <a href="https://www.bizreach.jp/">BizReach</a>
+    <br />
     <a href="https://www.careertrek.com/">CareerTrek</a>
     <EncourageButton />
   </Layout>
