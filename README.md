@@ -65,10 +65,10 @@
 - [Cucumber](https://docs.cucumber.io/)
 
 ## 🗒 TodoList
-- [ ] Change favicon to CareerTrek's 
+- [x] Change favicon to CareerTrek's 
 - [ ] Change fonts to Hacktoberfest's
-- [ ] Links to BizReach and CareerTrek
-- [ ] Show Map on the home page
+- [x] Links to BizReach and CareerTrek
+- [x] Show Map on the home page
 - [ ] Multi-languages support
 - [ ] Add encourage button
 - [ ] Add photo showcase
