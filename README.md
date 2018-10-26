@@ -67,7 +67,7 @@
 - [x] Links to BizReach and CareerTrek
 - [x] Show Map on the home page
 - [ ] Multi-languages support
-- [ ] Add encourage button
+- [x] Add encourage button
 - [x] Add photo showcase
 - [ ] Rearrange code related to deployment
 - [ ] Improve Cucumber code coverage

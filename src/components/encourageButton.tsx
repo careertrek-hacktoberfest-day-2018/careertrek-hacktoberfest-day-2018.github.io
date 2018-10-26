@@ -1,7 +1,7 @@
 import * as React from 'react';
 import axios from 'axios';
 
-import EncourageIcon from '../images/encourage-icon.png'
+import EncourageIcon from '../images/encourage-icon.png';
 
 interface IState {
   count: number;
@@ -30,28 +30,27 @@ export default class EncourageButton extends React.Component<{}, IState> {
   render() {
     return (
       <div style={buttonStyle} onClick={this.handleEncourage}>
-          <img src={EncourageIcon} style={iconStyle} />
-          いいね！: {this.state.count}
+        <img src={EncourageIcon} style={iconStyle} />
+        いいね！: {this.state.count}
       </div>
     );
   }
 }
 
 const buttonStyle = {
-    width: '180px',
-    lineHeight: '32px',
-    borderRadius: '4px',
-    border: 'none',
-    padding: '0 16px',
-    color: '#fff',
-    background: '#00b198',
-    display: 'flex',
+  width: '170px',
+  lineHeight: '32px',
+  borderRadius: '4px',
+  border: 'none',
+  padding: '0 16px',
+  color: '#fff',
+  background: '#00b198',
+  display: 'flex',
 };
 
 const iconStyle = {
-    display: 'inline-block',
-    width: '24px',
-    height: '24px',
-    marginRight: '8px',
-    margin: '0',
+  display: 'inline-block',
+  width: '24px',
+  height: '24px',
+  margin: '0 2px',
 };
