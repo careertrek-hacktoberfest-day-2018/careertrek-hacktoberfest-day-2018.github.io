@@ -17,3 +17,8 @@ Feature: Information on the home page must be correct
   Scenario: The title of this event must be shown
     Given I am on the homepage
     Then I can see "CareerTrek Hacktoberfest Day 2018"
+
+  Scenario: Exists BiZreach and CareerTrek link.
+    Given I am on the homepage
+    Then Exists link "BizReach"
+    Then Exists link "CareerTrek"

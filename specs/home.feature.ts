@@ -59,3 +59,12 @@ Then(/^I can access "(.*?)"$/, async (word) => {
 
     expect(bodyText).to.not.have.string(word);
 });
+
+Then(/^Exists link "(.*?)"$/, async (linkName) => {
+    const body: ElementHandle<Element> = await page.waitForSelector('body');
+    const bodyText: String = await (await body.getProperty(
+        'innerText',
+    )).jsonValue();
+
+    expect(bodyText).to.have.string(linkName);
+});
