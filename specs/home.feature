@@ -8,3 +8,8 @@ Feature: Information on the home page must be correct
     Given I am on the homepage
     Then I cannot see "unwelcomed"
     Then I cannot see "uninvited"
+
+  Scenario: Access Hacktoberfest
+    Given I am on the homepage
+    When I clicked "Hacktoberfest"
+    Then I can access "https://hacktoberfest.digitalocean.com/"
