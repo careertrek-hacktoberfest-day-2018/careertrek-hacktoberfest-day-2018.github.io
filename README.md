@@ -73,3 +73,4 @@
 - [ ] Improve Cucumber code coverage
 - [ ] Unit test
 - [x] TypeScript declaration for Typography
+- [x] Praise todays contributor
