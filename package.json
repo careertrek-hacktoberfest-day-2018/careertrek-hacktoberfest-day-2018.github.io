@@ -28,7 +28,7 @@
     "build": "gatsby build",
     "develop": "gatsby develop --host 0.0.0.0",
     "serve": "NODE_ENV=production gatsby serve",
-    "format": "prettier --write 'src/*.js'",
+    "format": "prettier --write 'src/**/*.{ts,tsx,css}'",
     "test": "yarn test:dev",
     "test:dev": "cross-env NODE_ENV=development cucumber-js ./specs/*.feature --require-module ts-node/register --require './specs/*.ts'",
     "test:prod": "cross-env NODE_ENV=production cucumber-js ./specs/*.feature --require-module ts-node/register --require './specs/*.ts'",
@@ -47,6 +47,8 @@
     "cucumber": "^5.0.2",
     "cucumber-html-reporter": "^4.0.4",
     "gh-pages": "^2.0.1",
+    "husky": "^1.1.2",
+    "lint-staged": "^7.3.0",
     "prettier": "^1.14.2",
     "puppeteer": "^1.9.0",
     "start-server-and-test": "^1.7.4",
@@ -55,5 +57,16 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/careertrek-hacktoberfest-day-2018/careertrek-hacktoberfest-day-2018.github.io"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{ts,tsx,js,json,css,md}": [
+      "prettier --write",
+      "git add"
+    ]
   }
 }
