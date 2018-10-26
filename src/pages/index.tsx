@@ -3,6 +3,8 @@ import * as React from 'react';
 import Layout from '../components/layout';
 import EncourageButton from '../components/encourageButton';
 
+import HacktoberFestIcon from '../images/Hacktoberfest_2018_banner3_522x522.png'
+
 const IndexPage = () => (
   <Layout>
     <h1>CareerTrek Hacktoberfest Day 2018</h1>
@@ -23,9 +25,31 @@ const IndexPage = () => (
       <time dateTime="2018-10-26T10:00+18:00">18:00</time>
     </p>
     <h2>Let us start hacking!</h2>
-    <a href="https://hacktoberfest.digitalocean.com/">Hacktoberfest</a>
+    <div style={LinkWrapperStyle}>
+      <img src={HacktoberFestIcon} style={iconStyle} />
+      <a href="https://hacktoberfest.digitalocean.com/" target="_blank" style={linkStyle}>
+        Hacktoberfest
+      </a>
+    </div>
     {/* <EncouragedButton></EncouragedButton> */}
   </Layout>
 );
+
+const LinkWrapperStyle = {
+  display: 'flex',
+};
+
+const iconStyle = {
+  display: 'inline-block',
+  width: '24px',
+  height: '24px',
+  marginRight: '8px',
+};
+
+const linkStyle = {
+  color: '#888',
+  textDecoration: 'none',
+};
+
 
 export default IndexPage;
