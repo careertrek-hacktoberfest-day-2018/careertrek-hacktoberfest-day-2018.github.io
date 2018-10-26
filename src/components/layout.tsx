@@ -10,11 +10,11 @@ interface LayoutProps {
 }
 
 interface MetaData {
-  name: String;
-  content: String;
+  name: string;
+  content: string;
 }
 
-const metaDataList: Array<MetaData> = [
+const metaDataList: MetaData[] = [
   { name: 'description', content: 'Careertrek Hacktoberfest Day 2018' },
   { name: 'keywords', content: 'hacktoberfest, careertrek' },
 ];
