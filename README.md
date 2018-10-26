@@ -40,22 +40,19 @@
 ### Without Docker
 ####  **Install the Gatsby CLI.**
 
-    ```sh
+    sh
     # install the Gatsby CLI globally
     npm install -g gatsby-cli
-    ```
 
 #### **Install dependencies.**
 
-    ```sh
+    sh
     yarn install
-    ```
 
 ####  **Start developing.**
 
-    ```sh
+    sh
     yarn develop
-    ```
 
 ## 📚 References
 - [Docker](https://docs.docker.com/)
