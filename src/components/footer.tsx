@@ -2,6 +2,7 @@ import * as React from 'react';
 
 import bizreachIcon from '../images/bizreach-icon.png';
 import careerTrekIcon from '../images/careertrek-icon.png';
+import stanbyIcon from '../images/stanby-icon.png';
 
 const Footer = () => (
   <footer
@@ -30,6 +31,12 @@ const Footer = () => (
         <img src={careerTrekIcon} style={iconStyle} />
         <a href="https://www.careertrek.com/" target="_blank" style={linkStyle}>
           CareerTrek
+        </a>
+      </div>
+      <div style={LinkWrapperStyle}>
+        <img src={stanbyIcon} style={iconStyle} />
+        <a href="https://jp.stanby.com/" target="_blank" style={linkStyle}>
+            Stanby
         </a>
       </div>
     </div>
