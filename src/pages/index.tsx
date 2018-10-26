@@ -67,7 +67,7 @@ const IndexPage = () => (
               <td><a href="https://github.com/hirogoe" target="_blank">@takakura</a><img src={goeImg} /></td>
           </tr>
       </table>
-      {<EncourageButton/> }
+      <EncourageButton />
   </Layout>
 );
 
@@ -86,6 +86,5 @@ const linkStyle = {
   color: '#888',
   textDecoration: 'none',
 };
-
 
 export default IndexPage;
