@@ -31,14 +31,14 @@ export default class EncourageButton extends React.Component<{}, IState> {
     return (
       <button style={buttonStyle} onClick={this.handleEncourage}>
         <img src={EncourageIcon} style={iconStyle} />
-        Nice! {this.state.count}
+        I'm a teapot! {this.state.count}
       </button>
     );
   }
 }
 
 const buttonStyle = {
-  width: '170px',
+  width: '220px',
   lineHeight: '36px',
   borderRadius: '4px',
   border: 'none',

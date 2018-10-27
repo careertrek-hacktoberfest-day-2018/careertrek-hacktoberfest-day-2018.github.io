@@ -16,24 +16,24 @@
 
 3.**Install Docker**
 
- ```sh
- brew cask install docker
- ```
+```sh
+brew cask install docker
+```
 
 4.**Build Docker image**
 
- ```sh
- docker build -t careertrekhacktober:latest docker/
- docker run --rm -it -p 8000:8000 -p 9000:9000 -v $(pwd):/webapp careertrekhacktober develop
- ```
+```sh
+docker build -t careertrekhacktober:latest docker/
+docker run --rm -it -p 8000:8000 -p 9000:9000 -v $(pwd):/webapp careertrekhacktober develop
+```
 
 5.**Check-in your work.**
 
- ```sh
- # Example 
- git commit -am "My Awesome Commit"
- git push
- ```
+```sh
+# Example  
+git commit -am "My Awesome Commit"
+git push
+```
 
 6.**Open Pull Request to original repository's develop branch**
 
