@@ -6,7 +6,7 @@
 
 0.**Opt-in [Hacktoberfest 2018](https://hacktoberfest.digitalocean.com)**
 
-   ![hacktoberfest](https://hacktoberfest.digitalocean.com/assets/logo-hacktoberfest-658b5aa2bd34e782d29c40bf6afbdff00f20fe1328efa6da17743878ba8db66f.png)
+![hacktoberfest](https://hacktoberfest.digitalocean.com/assets/logo-hacktoberfest-658b5aa2bd34e782d29c40bf6afbdff00f20fe1328efa6da17743878ba8db66f.png)
 
 1.**Fork project on GitHub**
 
@@ -16,51 +16,51 @@
 
 3.**Install Docker**
 
-    ```sh
-    brew cask install docker
-    ```
+ ```sh
+ brew cask install docker
+ ```
 
 4.**Build Docker image**
 
-    ```sh
-    docker build -t careertrekhacktober:latest docker/
-    docker run --rm -it -p 8000:8000 -p 9000:9000 -v $(pwd):/webapp careertrekhacktober develop
-    ```
+ ```sh
+ docker build -t careertrekhacktober:latest docker/
+ docker run --rm -it -p 8000:8000 -p 9000:9000 -v $(pwd):/webapp careertrekhacktober develop
+ ```
 
 5.**Check-in your work.**
 
-    ```sh
-    # Example 
-    git commit -am "My Awesome Commit"
-    git push
-    ```
+ ```sh
+ # Example 
+ git commit -am "My Awesome Commit"
+ git push
+ ```
 
 6.**Open Pull Request to original repository's develop branch**
 
 7.**Enjoy your work.**
 
-    [>>>>>>>>Click Me<<<<<<<<](https://careertrek-hacktoberfest-day-2018.github.io/)
+[>>>>>>>>Click Me<<<<<<<<](https://careertrek-hacktoberfest-day-2018.github.io/)
 
 ### Without Docker
 
 #### **Install the Gatsby CLI.**
 
-    ```sh
-    # install the Gatsby CLI globally
-    npm install -g gatsby-cli
-    ```
+ ```sh
+ # install the Gatsby CLI globally
+ npm install -g gatsby-cli
+ ```
 
 #### **Install dependencies.**
 
-    ```sh
-    yarn install
-    ```
+ ```sh
+ yarn install
+ ```
 
 #### **Start developing.**
 
-    ```sh
-    yarn develop
-    ```
+ ```sh
+ yarn develop
+ ```
 
 ## 📚 References
 
